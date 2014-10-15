@@ -22,23 +22,12 @@
 .introjs-fixParent {
   z-index: auto !important;
   opacity: 1.0 !important;
-  position: absolute;
-  -webkit-transform: none !important;
-     -moz-transform: none !important;
-      -ms-transform: none !important;
-       -o-transform: none !important;
-          transform: none !important;
 }
 
 .introjs-showElement,
 tr.introjs-showElement > td,
 tr.introjs-showElement > th {
   z-index: 9999999 !important;
-}
-
-.introjs-disableInteraction {
-  z-index: 99999999 !important;
-  position: absolute;
 }
 
 .introjs-relativePosition,
@@ -63,26 +52,10 @@ tr.introjs-showElement > th {
           transition: all 0.3s ease-out;
 }
 
-.introjs-tooltipReferenceLayer {
-  position: absolute;
-  z-index: 10000000;
-  background-color: transparent;
-}
-
-.introjs-helperLayer *,
-.introjs-helperLayer *:before,
-.introjs-helperLayer *:after {
-  -webkit-box-sizing: content-box;
-     -moz-box-sizing: content-box;
-      -ms-box-sizing: content-box;
-       -o-box-sizing: content-box;
-          box-sizing: content-box;
-}
-
 .introjs-helperNumberLayer {
   position: absolute;
   top: -16px;
-  left: 16px;
+  left: -16px;
   z-index: 9999999999 !important;
   padding: 2px;
   font-family: Arial, verdana, tahoma;
@@ -145,14 +118,6 @@ tr.introjs-showElement > th {
   border-bottom-color:transparent;
   border-left-color:white;
 }
-.introjs-arrow.right-bottom {
-  bottom:10px;
-  right: -10px;
-  border-top-color:transparent;
-  border-right-color:transparent;
-  border-bottom-color:transparent;
-  border-left-color:white;
-}
 .introjs-arrow.bottom {
   bottom: -10px;
   border-top-color:white;
@@ -168,21 +133,13 @@ tr.introjs-showElement > th {
   border-bottom-color:transparent;
   border-left-color:transparent;
 }
-.introjs-arrow.left-bottom {
-  left: -10px;
-  bottom:10px;
-  border-top-color:transparent;
-  border-right-color:white;
-  border-bottom-color:transparent;
-  border-left-color:transparent;
-}
 
 .introjs-tooltip {
   position: absolute;
   padding: 10px;
   background-color: white;
-  min-width: 200px;
-  max-width: 300px;
+  min-width: 400px;
+  max-width: 400px;
   border-radius: 3px;
   box-shadow: 0 1px 10px rgba(0,0,0,.4);
   -webkit-transition: opacity 0.1s ease-out;
@@ -194,7 +151,6 @@ tr.introjs-showElement > th {
 
 .introjs-tooltipbuttons {
   text-align: right;
-  white-space: nowrap;
 }
 
 /*
@@ -311,24 +267,6 @@ tr.introjs-showElement > th {
 .introjs-bullets ul li a.active {
   background: #999;
 }
-
-.introjs-progress {
-  overflow: hidden;
-  height: 10px;
-  margin: 10px 0 5px 0;
-  border-radius: 4px;
-  background-color: #ecf0f1
-}
-.introjs-progressbar {
-  float: left;
-  width: 0%;
-  height: 100%;
-  font-size: 10px;
-  line-height: 10px;
-  text-align: center;
-  background-color: #08c;
-}
-
 .introjsFloatingElement {
   position: absolute;
   height: 0;
